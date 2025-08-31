@@ -1,7 +1,7 @@
 {
-  "name": "whatsapp",
+  "name": "whatsapp_chat_bot",
   "version": "1.0.0",
-  "description": "this whatsapp-bot",
+  "description": "This is an whatsapp chat bot.",
   "license": "ISC",
   "author": "shaun",
   "type": "commonjs",
