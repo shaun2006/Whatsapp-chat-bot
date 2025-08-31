@@ -19,7 +19,7 @@ client.on("ready",() =>{
 
 client.on("message", message => {
     var data = (message.body);
-    console.log(data);
+    console.log("message: " + data);
     axios.post("http://localhost:11434/api/chat", {
     	model: "gemma3:1b", // make sure this model is actually installed
 	messages: [
@@ -33,7 +33,7 @@ client.on("message", message => {
     })
     .then(response => {
 	  var reply_from_llm = (response.data.message.content);
-	  console.log(reply_from_llm);
+	  console.log("Bot reply: " + reply_from_llm);
 	  client.sendMessage(message.from, reply_from_llm);
     });
 });
